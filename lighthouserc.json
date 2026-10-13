@@ -1,0 +1,46 @@
+{
+  "ci": {
+    "collect": {
+      "url": [
+        "https://xuantu32.github.io/devops-lab1-portfolio/",
+        "https://xuantu32.github.io/devops-lab1-portfolio/about.html",
+        "https://xuantu32.github.io/devops-lab1-portfolio/contact.html"
+      ],
+      "numberOfRuns": 1,
+      "settings": {
+        "chromeFlags": "--no-sandbox"
+      }
+    },
+    "assert": {
+      "assertions": {
+        "categories:performance": [
+          "warn",
+          {
+            "minScore": 0.5
+          }
+        ],
+        "categories:accessibility": [
+          "warn",
+          {
+            "minScore": 0.5
+          }
+        ],
+        "categories:best-practices": [
+          "warn",
+          {
+            "minScore": 0.5
+          }
+        ],
+        "categories:seo": [
+          "warn",
+          {
+            "minScore": 0.5
+          }
+        ]
+      }
+    },
+    "upload": {
+      "target": "temporary-public-storage"
+    }
+  }
+}
